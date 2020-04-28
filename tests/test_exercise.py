@@ -1,7 +1,7 @@
 import pytest
-from src.exercise import main
+from src.exercise import division
 
 def test_exercise(capsys):
-    main()
+    division(3,2)
     out, err = capsys.readouterr()
-    assert out == "\n", "Should read ''"
+    assert out == "1.5\n", "Should read '1.5'"
